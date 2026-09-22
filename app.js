@@ -27,11 +27,8 @@ const ville = "Bamako";
 console.log("Je m'appelle " + prenom, " j'ai ", + age, "ans ", "j'habite à " + ville, "et je suis " + profession );
 console.log(typeof prenom); // string
 console.log(typeof age); // number
-console.log(typeof profession); // boolean
+console.log(typeof profession); // string
 console.log(typeof ville); // string
-
-*/
-
 const a = 10;
 const b = 3;
 
@@ -92,4 +89,28 @@ if (wou >= 18) {
     console.log("Accès autorisé")
 }else {
     console.log("Accès refusé")
+}
+
+*/
+
+const age = 16;
+const permis = true;
+
+console.log(age >= 18 && permis === true);
+
+const age1 = 16;
+const accompagnateur = false;
+
+console.log(age1 >= 18 || accompagnateur === true);
+
+const connecte = true;
+console.log(!connecte);
+
+const agee = 22;
+const connect = true;
+
+if (agee >= 18 && connect === true) {
+    console.log("Accès autorisé");
+} else {
+    console.log("Accès refusé");
 }
